@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ImageButton
+        android:src="@drawable/forward"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/Forward"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp" />
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relativeLayout1">
+        <ImageButton
+            android:src="@drawable/left"
+            android:id="@+id/Left"
+            android:scaleType="fitCenter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp" />
+        <ImageButton
+            android:src="@drawable/right"
+            android:id="@+id/Right"
+            android:scaleType="fitCenter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
+    <ImageButton
+        android:src="@drawable/backward"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/Backward"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
