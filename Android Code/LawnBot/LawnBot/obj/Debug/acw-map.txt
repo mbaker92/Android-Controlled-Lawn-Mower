@@ -1,0 +1,4 @@
+LawnBot.MainActivity, LawnBot;md5175765162c68e44df7eb8bd4f4195d4b.MainActivity
+LawnBot.MainActivity, LawnBot, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5175765162c68e44df7eb8bd4f4195d4b.MainActivity
+LawnBot.MainActivity;md5175765162c68e44df7eb8bd4f4195d4b.MainActivity
+lawnbot.MainActivity;md5175765162c68e44df7eb8bd4f4195d4b.MainActivity

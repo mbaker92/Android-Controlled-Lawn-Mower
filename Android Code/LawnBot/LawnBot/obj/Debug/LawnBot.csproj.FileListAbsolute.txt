@@ -1,0 +1,41 @@
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\bin\Debug\LawnBot.dll
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\bin\Debug\LawnBot.pdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\bin\Debug\LawnBot.LawnBot.apk
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\bin\Debug\LawnBot.LawnBot-Signed.apk
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\LawnBot.csprojResolveAssemblyReference.cache
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\LawnBot.csproj.CoreCompileInputs.cache
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\LawnBot.dll
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\LawnBot.pdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\android\bin\LawnBot.LawnBot.apk
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\res\layout\main.xml
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\res\values\strings.xml
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\res\drawable\backward.png
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\res\drawable\left.png
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\res\drawable\right.png
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\res\drawable\forward.png
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\R.cs.flag
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\uploadflags.txt
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\bin\Debug\LawnBot.dll.mdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\android\assets\LawnBot.dll.mdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\bin\Debug\LawnBot.dll
+bin\Debug\Mono.Android.pdb
+bin\Debug\mscorlib.pdb
+bin\Debug\System.Core.pdb
+bin\Debug\System.pdb
+bin\Debug\System.Xml.pdb
+bin\Debug\System.Net.Http.pdb
+bin\Debug\System.Runtime.Serialization.pdb
+bin\Debug\System.ServiceModel.Internals.pdb
+bin\Debug\Mono.Security.pdb
+bin\Debug\System.ComponentModel.Composition.pdb
+obj\Debug\linksrc\LawnBot.dll.mdb
+obj\Debug\linksrc\Mono.Android.pdb
+obj\Debug\linksrc\mscorlib.pdb
+obj\Debug\linksrc\System.Core.pdb
+obj\Debug\linksrc\System.pdb
+obj\Debug\linksrc\System.Xml.pdb
+obj\Debug\linksrc\System.Net.Http.pdb
+obj\Debug\linksrc\System.Runtime.Serialization.pdb
+obj\Debug\linksrc\System.ServiceModel.Internals.pdb
+obj\Debug\linksrc\Mono.Security.pdb
+obj\Debug\linksrc\System.ComponentModel.Composition.pdb
