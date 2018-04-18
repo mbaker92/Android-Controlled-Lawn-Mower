@@ -1,24 +1,52 @@
-﻿using Android.App;
+﻿/* Author: Matthew Baker
+ * Email: Hackmattr@gmail.com
+ * Program: LawnBot
+ * File: MainActivity.cs
+ * Date Created: 4/12/2018
+ * Date Modified: 4/17/2018
+ * 
+ * Description: An android application with 4 buttons to control the direction of a lawn
+ *              mowing robot. The application communicates with the Arduino of the robot
+ *              through bluetooth. Application assumes that the bluetooth device is already 
+ *              paired and on when app is first started. Will need to close the app to and 
+ *              re-open to re=establish connection if switching to another app after its open.
+ *              
+ * ToDo:  - Modify the code to prevent app from crashing if the arduino is not on or if the 
+ *          bluetooth module is not already paired.
+ *        - Keep bluetooth connection if app is on pause
+ *        - If two buttons are pressed and then one released, send command to continue in the
+ *          direction that is still active.
+ */
+
+
+ // Libraries Used
+using Android.App;
 using Android.Widget;
 using Android.OS;
 using Android.Content;
 using Android.Bluetooth;
 using System.Collections.Generic;
-using System;
-using Java.IO;
+using Android.Views;
 
 
 namespace LawnBot
 {
     [Activity(Label = "LawnBot", MainLauncher = true)]
-    public class MainActivity : Activity
+    public class MainActivity : Activity, View.IOnTouchListener
     {
+
+        // Variables used for the blueooth connection
         private BluetoothAdapter bluetoothAdapter = BluetoothAdapter.DefaultAdapter;
         private BluetoothSocket socket;
         private System.IO.Stream output;
         private System.IO.Stream input;
 
-        private int status = 0;
+        // Variables used to determine if the motors are already enabled
+        private bool ForEnabled = false;
+        private bool BackEnabled = false;
+        private bool LeftEnabled = false;
+        private bool RightEnabled = false;
+        
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -35,32 +63,117 @@ namespace LawnBot
             ImageButton LeftButton = FindViewById<ImageButton>(Resource.Id.Left);
             ImageButton RightButton = FindViewById<ImageButton>(Resource.Id.Right);
 
+            // Set OnTouch Listeners for the buttons
+            ForwardButton.SetOnTouchListener(this);
+            BackwardButton.SetOnTouchListener(this);
+            LeftButton.SetOnTouchListener(this);
+            RightButton.SetOnTouchListener(this);
 
             bool connected = ConnectToDevice(EnableBTDevice());
 
-            ForwardButton.Click += delegate
-            {
-                if (connected == true){
-                    if (status == 0)
-                    {
-                        status = 1;
-
-                        // Send a 1 to the Arduino to open the door
-                        output.WriteByte(1);
-                        System.Diagnostics.Debug.WriteLine("Turned ON");
-                    }
-                    else if (status == 1)
-                    {
-                        status = 0;
-
-                        // Send a 0 to the Arduino to close the door
-                        output.WriteByte(0);
-                        System.Diagnostics.Debug.WriteLine("Turned OFF");
-                    }
-
-                }
-            };
         }
+
+        public bool OnTouch(View v, MotionEvent e)
+        {
+            // Determine the button based on the ID
+          switch (v.Id)
+            {
+                // Forward Button 
+                case Resource.Id.Forward:
+                    // If Forward Button Pressed and Motor is off
+                    if ((e.Action == MotionEventActions.Down) & (ForEnabled == false ))
+                    {
+                        // Send F to the arduino
+                        output.WriteByte((byte)'F');
+
+                        // ForEnabled set to true to show this code the motor is on
+                        ForEnabled = true;
+
+                    }
+                    // When button is released
+                    else if(e.Action == MotionEventActions.Up)
+                    {
+                        // Send f to the arduino
+                        output.WriteByte((byte)'f');
+
+                        // ForEnabled set to false to show this code the motor is off
+                        ForEnabled = false;
+                    }
+                    break;
+                
+                // Backward Button
+                case Resource.Id.Backward:
+                    // If Backward button pressed and motor is off
+                    if ((e.Action == MotionEventActions.Down) & (BackEnabled == false))
+                    {
+                        // Send B to the Arduino
+                        output.WriteByte((byte)'B');
+
+                        // BackEnabled set to true to show this code the motor is on
+                        BackEnabled = true;
+                    }
+                    // When button is released
+                    else if (e.Action == MotionEventActions.Up)
+                    {
+                        // Send b to the Arduino
+                        output.WriteByte((byte)'b');
+
+                        // BackEnabled set to false to show this code the motor is off
+                        BackEnabled = false;
+                    }
+                    break;
+
+                // Left Button 
+                case Resource.Id.Left:
+                    // If Left button pressed and motor is off
+                    if ((e.Action == MotionEventActions.Down) &(LeftEnabled == false))
+                    {
+                        // Send L to the Arduino
+                        output.WriteByte((byte)'L');
+
+                        // LeftEnabled set to true to show this code the motor is on
+                        LeftEnabled = true;
+                    }
+                    // When button is released
+                    else if (e.Action == MotionEventActions.Up)
+                    {
+                        // Send l to Arduino
+                        output.WriteByte((byte)'l');
+
+                        // LeftEnabled set to false to show this code the motor is off
+                        LeftEnabled = false;
+                    }
+                    break;
+
+                // Right Button 
+                case Resource.Id.Right:
+                    // Right button pressed and motor is off
+                    if ((e.Action == MotionEventActions.Down) & (RightEnabled == false))
+                    {
+                        // Send R to the Arduino
+                        output.WriteByte((byte)'R');
+
+                        // RightEnabled set to true to show this code the motor is on
+                        RightEnabled = true;
+                    }
+                    // When Button Released
+                    else if (e.Action == MotionEventActions.Up)
+                    {
+                        // Send r to Arduino
+                        output.WriteByte((byte)'r');
+
+                        //RightEnabled set to false to show this code the motor is off
+                        RightEnabled = false;
+                    }
+                    break;
+
+                default: break;
+            }
+
+            return true;
+        }
+
+
         private bool EnableBTDevice()
         {
             // Variable returned
