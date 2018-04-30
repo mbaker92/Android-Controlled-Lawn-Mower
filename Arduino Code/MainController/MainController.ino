@@ -6,7 +6,7 @@
  */
 
 #include <MOTOR.h>
-
+void StopMotors();
 int state;
 
 void setup() {
@@ -16,31 +16,27 @@ void setup() {
 
 void loop() {
   while(Serial.available() > 0){ // Checks whether data is comming from the serial port
-    state = Serial.read(); // Reads the data from the serial port
+   state = Serial.read(); // Reads the data from the serial port
 
-   switch(state)
+   switch(state){
       case 'F':
         // Move Forward
         motor.set(A,127,FORWARD);
         motor.set(B,127,FORWARD);
-        break;
-        
+        break;      
       case 'f':
         // Stop Forward
         StopMotors();
-        break;
-        
+        break;   
       case 'B':
         //Move Backward
         motor.set(A,127,REVERSE);
         motor.set(B,127,REVERSE);
-        break;
-        
+        break; 
       case 'b':
         //Stop Backward
         StopMotors();
         break;
-        
       case 'R':
         //Move Right
         break;
@@ -53,12 +49,13 @@ void loop() {
       case 'l':
         // Stop Left
         break;
-  
-}}
+   }
+ }
+}
 
 void StopMotors(){
   motor.close(A);
   motor.close(B);
 }
-}
+
 
