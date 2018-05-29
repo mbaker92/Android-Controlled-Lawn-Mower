@@ -27,6 +27,7 @@ using Android.Content;
 using Android.Bluetooth;
 using System.Collections.Generic;
 using Android.Views;
+using System;
 
 
 namespace LawnBot
@@ -85,7 +86,7 @@ namespace LawnBot
                     {
                         // Send F to the arduino
                         output.WriteByte((byte)'F');
-
+                        Android.Util.Log.Debug("Forward Press", Convert.ToString((byte)'F') );
                         // ForEnabled set to true to show this code the motor is on
                         ForEnabled = true;
 

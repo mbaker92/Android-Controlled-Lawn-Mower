@@ -15,7 +15,6 @@ D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\res
 D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\res\drawable\forward.png
 D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\R.cs.flag
 D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\uploadflags.txt
-D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\bin\Debug\LawnBot.dll
 D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\bin\Debug\Mono.Android.pdb
 D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\bin\Debug\mscorlib.pdb
 D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\bin\Debug\System.Core.pdb
@@ -36,4 +35,18 @@ D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\lin
 D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\linksrc\System.ServiceModel.Internals.pdb
 D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\linksrc\Mono.Security.pdb
 D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\linksrc\System.ComponentModel.Composition.pdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\linksrc\LawnBot.dll.mdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\bin\Debug\LawnBot.dll.mdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\android\assets\LawnBot.dll.mdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\android\assets\Mono.Android.pdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\android\assets\Mono.Security.pdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\android\assets\mscorlib.pdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\android\assets\System.ComponentModel.Composition.pdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\android\assets\System.Core.pdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\android\assets\System.Net.Http.pdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\android\assets\System.pdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\android\assets\System.Runtime.Serialization.pdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\android\assets\System.Xml.pdb
+D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\bin\Debug\LawnBot.dll
 D:\Code\Android-Controlled-Lawn-Mower\Android Code\LawnBot\LawnBot\obj\Debug\linksrc\LawnBot.dll.mdb
