@@ -26,8 +26,8 @@ void loop() {
       case 'F' :
         // Move Forward
 
-        motor.set(A,50,FORWARD);
-        motor.set(B,50,REVERSE);
+        motor.set(A,65,REVERSE);
+        motor.set(B,65,FORWARD);
         break;      
       case 'f':
         // Stop Forward
@@ -35,16 +35,16 @@ void loop() {
         break;   
       case 'B':
         //Move Backward
-        motor.set(A,50,REVERSE);
-        motor.set(B,50,FORWARD);
+        motor.set(A,55,FORWARD);
+        motor.set(B,55,REVERSE);
         break; 
       case 'b':
         //Stop Backward
         StopMotors();
         break;
       case 'R':
-        motor.set(A,50,FORWARD);
-        motor.set(B,50,FORWARD);
+        motor.set(A,90,FORWARD);
+        motor.set(B,90,FORWARD);
         //Move Right
         break;
       case 'r':
@@ -53,8 +53,8 @@ void loop() {
         break;
       case 'L':
         //Move Left
-        motor.set(A,50,REVERSE);
-        motor.set(B,50,REVERSE);
+        motor.set(A,90,REVERSE);
+        motor.set(B,90,REVERSE);
         break;
       case 'l':
         // Stop Left
