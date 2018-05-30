@@ -26,20 +26,26 @@ void loop() {
       case 'F' :
         // Move Forward
 
-        motor.set(A,65,REVERSE);
-        motor.set(B,65,FORWARD);
+        motor.set(A,100,REVERSE);
+        motor.set(B,100,FORWARD);
         break;      
       case 'f':
         // Stop Forward
+        motor.set(A,40,REVERSE);
+        motor.set(B,40,FORWARD);
+        delay(250);
         StopMotors();
         break;   
       case 'B':
         //Move Backward
-        motor.set(A,55,FORWARD);
-        motor.set(B,55,REVERSE);
+        motor.set(A,80,FORWARD);
+        motor.set(B,80,REVERSE);
         break; 
       case 'b':
         //Stop Backward
+        motor.set(A,30,FORWARD);
+        motor.set(B,30,REVERSE);
+        delay(250);
         StopMotors();
         break;
       case 'R':
