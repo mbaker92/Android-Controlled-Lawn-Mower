@@ -58,7 +58,8 @@
 <h2>Arduino Code</h2>
 <h2>Test Videos</h2>
 <p>This video is the first test video where the LawnBot is moving based on the serial communication from the Android Application. The commands being sent for Forward and Backwards are opposite of actual movement so I needed to change it in the code. Click on Picture to see video on Youtube.</p>
-[![Test 1](https://img.youtube.com/vi/AuVcFB6_y2I/0.jpg)](https://www.youtube.com/watch?v=AuVcFB6_y2I)
+
+[![Test 1](https://img.youtube.com/vi/AuVcFB6_y2I/0.jpg)](https://www.youtube.com/watch?v=AuVcFB6_y2I "Test 1" )
 
 <h2>Conclusion</h2>
 <img src="
