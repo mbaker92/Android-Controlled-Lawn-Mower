@@ -55,5 +55,8 @@
 <h2>Electronics</h2>
 <h2>Android Code</h2>
 <h2>Arduino Code</h2>
+<h2>Test Videos</h2>
+<p>This video is the first test video where the LawnBot is moving based on the serial communication from the Android Application. The commands being sent for Forward and Backwards are opposite of actual movement so I needed to change it in the code.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AuVcFB6_y2I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <h2>Conclusion</h2>
 <img src="
